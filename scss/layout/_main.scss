@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  &-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    box-shadow: 0 0 0.4rem darkblue;
+    border-radius: 0.5rem;
+  }
+  &-paragraph {
+    &::first-line {
+      text-shadow: 0 0 1rem rgb(15, 15, 252);
+    }
+    font-size: 2rem;
+    padding: 1.5rem;
+    letter-spacing: 2;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px black;
+  }
+  &-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    & > * {
+      flex: 1 1 100%;
+    }
+    input {
+      display: none;
+    }
+    label {
+      cursor: pointer;
+      border: 0.2rem solid;
+      border-image: linear-gradient(to right, #365bff, #f10707);
+      border-image-slice: 1;
+      border-radius: 1rem;
+      padding: 1rem 1rem;
+      margin: 1rem;
+      box-shadow: 0 0 1rem black;
+      transition: 0.5s all;
+    }
+    label:hover {
+      transform: translateY(-1rem);
+      color: rgb(255, 30, 30);
+    }
+  }
+}
