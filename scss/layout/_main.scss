@@ -6,6 +6,24 @@
   margin: auto;
   min-height: 100vh;
   min-height: 100dvh;
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    font-size: 4rem;
+
+    a {
+      padding-inline: 1rem;
+      color: rgb(255, 255, 255);
+
+      transition: 0.5s color, 5s transform;
+
+      &:hover {
+        color: rgb(15, 15, 252);
+      }
+    }
+  }
   &-container {
     background-color: rgba(0, 0, 0, 0.5);
     width: 800px;
@@ -16,7 +34,8 @@
   }
   &-paragraph {
     &::first-line {
-      text-shadow: 0 0 1rem rgb(15, 15, 252);
+      text-shadow: 0 0 2rem rgb(15, 15, 252);
+      color: red;
     }
     font-size: 2rem;
     padding: 1.5rem;
@@ -51,6 +70,60 @@
       color: rgb(255, 30, 30);
     }
   }
+  //   tab1 tab2 tab3 tab4
+  .main-skill {
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    .main-skill-icon {
+      font-size: 5rem;
+      color: rgb(185, 35, 35);
+    }
+    &-frontend {
+      width: 100%;
+      padding: 1rem;
+      h2 {
+        margin: 0;
+      }
+      border-right: 0.3rem solid rgba(17, 0, 255, 0.2);
+      &-names {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &-tool {
+      padding: 1rem;
+      width: 100%;
+      &-name {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .main-education {
+    justify-content: space-between;
+    align-items: start;
+    font-size: 2rem;
+    padding: 1.5rem;
+    height: 20rem;
+    .main-education > * {
+      flex: 1 1 100%;
+    }
+  }
+  .left {
+    color: rgb(182, 163, 250);
+    text-shadow: 0 0 0.3rem rgb (182, 163, 250);
+  }
+  .main-experience {
+    justify-content: center;
+    align-items: center;
+    color: rgb(182, 163, 250);
+    font-size: 3rem;
+    padding: 1.5rem;
+    height: 20rem;
+  }
 }
 
 // Tabs
@@ -62,5 +135,5 @@
 }
 
 .active {
-  display: block;
+  display: flex;
 }
