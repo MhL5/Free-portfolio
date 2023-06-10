@@ -12,8 +12,7 @@
 }
 html {
   font-size: var(--fs-html);
-  min-height: 100vh;
-  min-height: 100dvh;
+  //   height: 100dvh;
   //   for animation
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
@@ -27,6 +26,6 @@ body {
   background-image: url(../img/bg.jpg);
   background-size: cover;
   background-position: 0 0;
-  min-height: 100vh;
-  min-height: 100dvh;
+  height: 100vh;
+  //   height: 100dvh;
 }
