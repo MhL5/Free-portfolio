@@ -12,7 +12,6 @@
     justify-content: flex-start;
     padding-left: 2rem;
     font-size: 4rem;
-
     a {
       padding-inline: 1rem;
       color: rgb(255, 255, 255);
@@ -26,24 +25,67 @@
   }
   &-container {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 800px;
-    height: 500px;
+    width: 80rem;
+    height: 50rem;
     margin: auto;
     box-shadow: 0 0 0.4rem darkblue;
     border-radius: 0.5rem;
+    & {
+      @media (max-width: 900px) {
+        width: 70rem;
+      }
+      @media (max-width: 800px) {
+        width: 60rem;
+        height: 60rem;
+      }
+      @media (max-width: 700px) {
+        width: 50rem;
+        height: 70rem;
+      }
+      @media (max-width: 600px) {
+        width: 45rem;
+        height: 70rem;
+      }
+      @media (max-width: 500px) {
+        width: 38rem;
+        height: 70rem;
+      }
+    }
   }
   &-paragraph {
     &::first-line {
       text-shadow: 0 0 2rem rgb(15, 15, 252);
-      color: red;
     }
     font-size: 2rem;
     padding: 1.5rem;
     letter-spacing: 2;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 3px black;
+    @media (max-width: 800px) {
+      height: 28rem;
+    }
+    @media (max-width: 700px) {
+      font-size: 1.8rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.7rem;
+    }
   }
   &-tabs {
+    @media (max-width: 700px) {
+      flex-wrap: wrap;
+      flex-direction: row;
+      label {
+        flex: 1 1 40%;
+      }
+    }
+    @media (max-width: 500px) {
+      flex-wrap: wrap;
+      flex-direction: row;
+      label {
+        flex: 1 1 25%;
+      }
+    }
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -76,10 +118,22 @@
     padding-left: 1rem;
     padding-right: 1rem;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    @media (max-width: 700px) {
+      align-items: flex-start;
+    }
+    @media (max-width: 600px) {
+      align-items: flex-start;
+    }
     .main-skill-icon {
       font-size: 5rem;
       color: rgb(185, 35, 35);
+      @media (max-width: 800px) {
+        font-size: 3rem;
+      }
+      @media (max-width: 600px) {
+        font-size: 3rem;
+      }
     }
     &-frontend {
       width: 100%;
@@ -101,6 +155,9 @@
         justify-content: space-between;
       }
     }
+    @media (max-width: 800px) {
+      height: 30rem;
+    }
   }
   .main-education {
     justify-content: space-between;
@@ -110,6 +167,12 @@
     height: 20rem;
     .main-education > * {
       flex: 1 1 100%;
+    }
+    @media (max-width: 800px) {
+      height: 28rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.7rem;
     }
   }
   .left {
@@ -123,6 +186,12 @@
     font-size: 3rem;
     padding: 1.5rem;
     height: 20rem;
+    @media (max-width: 800px) {
+      height: 28rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.7rem;
+    }
   }
 }
 

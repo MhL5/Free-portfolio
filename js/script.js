@@ -1,8 +1,8 @@
 // Type effect
 var typed = new Typed("#element", {
   strings: [
-    "very happy to see you here!",
-    "Mohammad Hosein Lashani.",
+    "happy to see you here!",
+    "Mohammad Lashani.",
     "<i>a</i> Developer.",
     "a Frontend junior.",
   ],
