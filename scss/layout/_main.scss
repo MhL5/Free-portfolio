@@ -60,6 +60,10 @@
         width: 38rem;
         height: 70rem;
       }
+      @media (max-width: 400px) {
+        width: 34rem;
+        height: 70rem;
+      }
     }
   }
   &-paragraph {
@@ -95,6 +99,9 @@
       label {
         flex: 1 1 25%;
       }
+    }
+    @media (max-width: 400px) {
+      margin-top: 1rem;
     }
     display: flex;
     align-items: center;
