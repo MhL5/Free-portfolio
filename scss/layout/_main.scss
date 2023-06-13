@@ -30,6 +30,16 @@
     margin: auto;
     box-shadow: 0 0 0.4rem darkblue;
     border-radius: 0.5rem;
+    //
+    border-inline-start: 1rem solid;
+    border-block-start: 1rem solid;
+    border-image-source: radial-gradient(
+      circle at top left,
+      rgba(38, 0, 255, 0.5),
+      transparent 50%
+    );
+    border-image-slice: 1;
+    //
     & {
       @media (max-width: 900px) {
         width: 70rem;
@@ -180,12 +190,13 @@
     text-shadow: 0 0 0.3rem rgb (182, 163, 250);
   }
   .main-experience {
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     color: rgb(182, 163, 250);
     font-size: 3rem;
     padding: 1.5rem;
     height: 20rem;
+    text-align: left;
     @media (max-width: 800px) {
       height: 28rem;
     }

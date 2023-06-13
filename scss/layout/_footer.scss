@@ -3,19 +3,24 @@
   top: 0;
   left: 0;
   padding: 2rem;
+  text-shadow: 0 0 2rem;
+  box-shadow: 0 0 1rem;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 26, 121, 1) 35%,
-    rgb(25, 0, 255) 100%
+    rgba(2, 0, 36, 1) 100%
   );
   border-radius: 0 0 4rem 0;
-  transition: color 0.5s, transform 1s, border-radius 1s;
+  transition: color 0.5s, transform 1s, border-radius 1s, font-size 3s,
+    margin 1s;
   cursor: pointer;
   &:hover {
-    border-radius: 4rem 4rem 0rem 4rem;
+    border-radius: 4rem 4rem 4rem 4rem;
     transform: scale(1.1);
     color: gold;
+    font-size: 2rem;
+    margin: 4rem;
   }
 }
