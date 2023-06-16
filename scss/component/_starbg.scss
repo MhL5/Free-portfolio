@@ -104,6 +104,16 @@ $shadows-small: multiple-box-shadow(200);
 $shadows-medium: multiple-box-shadow(200);
 $shadows-big: multiple-box-shadow(200);
 
+@media (max-width: 700px) {
+  $shadows-small: multiple-box-shadow(100);
+  $shadows-medium: multiple-box-shadow(100);
+  $shadows-big: multiple-box-shadow(100);
+}
+@media (max-width: 400px) {
+  $shadows-small: multiple-box-shadow(50);
+  $shadows-medium: multiple-box-shadow(50);
+  $shadows-big: multiple-box-shadow(50);
+}
 // Define styles for HTML and body elements
 // html {
 //   height: 100%;

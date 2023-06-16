@@ -2,9 +2,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 2rem;
+  padding: 1.4rem;
+  padding-right: 2rem;
   text-shadow: 0 0 2rem;
-  box-shadow: 0 0 1rem;
+  box-shadow: 0 0 1rem rgb(72, 72, 218);
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -13,14 +14,15 @@
     rgba(2, 0, 36, 1) 100%
   );
   border-radius: 0 0 4rem 0;
+  font-size: 1.5rem;
   transition: color 0.5s, transform 1s, border-radius 1s, font-size 3s,
     margin 1s;
   cursor: pointer;
   &:hover {
     border-radius: 4rem 4rem 4rem 4rem;
     transform: scale(1.1);
-    color: gold;
-    font-size: 2rem;
-    margin: 4rem;
+    color: red;
+    font-size: 1.8rem;
+    margin: 2rem;
   }
 }
