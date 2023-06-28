@@ -102,7 +102,7 @@
 // Define variables for different shadow sizes
 $shadows-small: multiple-box-shadow(200);
 $shadows-medium: multiple-box-shadow(200);
-$shadows-big: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
 
 @media (max-width: 700px) {
   $shadows-small: multiple-box-shadow(100);
@@ -184,6 +184,6 @@ $shadows-big: multiple-box-shadow(200);
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-100vh);
+    transform: translateY(-10vh);
   }
 }
