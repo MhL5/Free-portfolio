@@ -64,6 +64,10 @@
         width: 34rem;
         height: 70rem;
       }
+      @media (max-width: 375px) {
+        width: 34rem;
+        height: 80rem;
+      }
     }
   }
   &-paragraph {
@@ -83,6 +87,9 @@
     }
     @media (max-width: 600px) {
       font-size: 1.7rem;
+    }
+    @media (max-width: 375px) {
+      height: 30rem;
     }
   }
   &-tabs {

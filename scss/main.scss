@@ -2,7 +2,6 @@
 
 @import "./component/starbg";
 @import "./component/typeeffect";
-@import "./layout/footer";
 
 :root {
   // 1rem = 10px
@@ -28,4 +27,10 @@ body {
   background-size: cover;
   background-position: center;
   //   height: 100dvh;
+}
+
+.fs-tiny {
+  @media (max-width: 375px) {
+    font-size: 1.5rem;
+  }
 }
